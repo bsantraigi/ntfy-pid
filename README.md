@@ -28,7 +28,7 @@ A bash script that monitors a job by its process ID (PID) and sends a notificati
 
 1. Download the script:
    ```bash
-   curl -O https://github.com/bsantraigi/ntfy-pid/raw/refs/heads/main/ntfy-pid.sh
+   curl -O https://raw.githubusercontent.com/bsantraigi/ntfy-pid/refs/heads/main/ntfy-pid.sh
    ```
 
 2. Make it executable:
