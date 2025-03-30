@@ -21,6 +21,22 @@ A bash script that monitors a job by its process ID (PID) and sends a notificati
 
 - Bash shell
 - [ntfy CLI](https://ntfy.sh/docs/install/) installed
+
+- Linux/Unix system with `ps` command available
+
+## Installation
+
+1. Download the script:
+   ```bash
+   curl -O https://github.com/bsantraigi/ntfy-pid/raw/refs/heads/main/ntfy-pid.sh
+   ```
+
+2. Make it executable:
+   ```bash
+   chmod +x ntfy-pid.sh
+   ```
+
+3. Install ntfy if not already installed:
   ```bash
   # Get the binary
   wget https://github.com/binwiederhier/ntfy/releases/download/v2.11.0/ntfy_2.11.0_linux_amd64.tar.gz
@@ -33,31 +49,6 @@ A bash script that monitors a job by its process ID (PID) and sends a notificati
   sudo bash -c "echo default-host: https://ntfy.mydomain.com >> /etc/ntfy/client.yml"
   echo "default-host: https://ntfy.mydomain.com" > $HOME/.config/ntfy/client.yml
   ```
-- Linux/Unix system with `ps` command available
-
-## Installation
-
-1. Download the script:
-   ```bash
-   curl -O https://path/to/job_monitor.sh
-   ```
-
-2. Make it executable:
-   ```bash
-   chmod +x job_monitor.sh
-   ```
-
-3. Install ntfy if not already installed:
-   ```bash
-   # For Linux (Debian/Ubuntu)
-   curl -sSL https://archive.heckel.io/apt/pubkey.txt | sudo apt-key add -
-   sudo apt install ntfy
-   
-   # For macOS
-   brew install ntfy
-   
-   # For other systems, see: https://ntfy.sh/docs/install/
-   ```
 
 ## Usage
 
