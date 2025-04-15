@@ -97,7 +97,7 @@ TITLE="Job Complete: $JOB_NAME"
 MESSAGE="Status: $STATUS
 Duration: $DURATION_FORMAT
 Command: $ORIGINAL_CMD
-Host: $HOST
+Host: $AMLT_EXPERIMENT_NAME @ $HOST
 User: $USER
 PID: $PID
 Completed: $(date '+%Y-%m-%d %H:%M:%S')"
